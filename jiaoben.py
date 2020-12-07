@@ -14,12 +14,12 @@ driver.find_element_by_xpath(
     "//input[@name='question_434727']").send_keys("YANG YIZHAN")
 Select(driver.find_element_by_name(
     "question_434726")).select_by_value("中級C4")
-driver.find_element_by_xpath("//input[@name='question_434728']")
+driver.find_element_by_xpath("//input[@name='question_434728']").click()
 date=str(str(datetime.datetime.now().year)+"/"
          +str(datetime.datetime.now().month)+"/"
          +str(datetime.datetime.now().day))
 driver.find_element_by_xpath(
     "//input[@name='question_435964']").send_keys(date)
-driver.find_element_by_id("customform-submit")
+driver.find_element_by_id("customform-submit").click()
 time.sleep(5)
 driver.quit()
