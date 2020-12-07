@@ -18,4 +18,4 @@ jobs:
           python-version: 3.7
 
       - name: Run
-        run:  python3 ./jiaoben.py'
+        run:  python3 ./jiaoben.py
