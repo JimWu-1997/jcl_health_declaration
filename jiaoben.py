@@ -7,7 +7,7 @@ from selenium.webdriver.support.select import Select
 
 driver = webdriver.Firefox()
 driver.get("http://customform.jp/form/input/46755/")
-time.sleep(0.3)
+time.sleep(10)
 driver.find_element_by_xpath(
     "//input[@name='question_434724']").send_keys("学生証番号")
 driver.find_element_by_xpath(
@@ -21,5 +21,4 @@ date=str(str(datetime.datetime.now().year)+"/"
 driver.find_element_by_xpath(
     "//input[@name='question_435964']").send_keys(date)
 driver.find_element_by_id("customform-submit").click()
-time.sleep(5)
 driver.quit()
