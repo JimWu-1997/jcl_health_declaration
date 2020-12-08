@@ -9,11 +9,11 @@ driver = webdriver.Firefox()
 driver.get("http://customform.jp/form/input/46755/")
 time.sleep(10)
 driver.find_element_by_xpath(
-    "//input[@name='question_434724']").send_keys("学生証番号")
+    "//input[@name='question_434724']").send_keys("G2004155")
 driver.find_element_by_xpath(
-    "//input[@name='question_434727']").send_keys("名前")
+    "//input[@name='question_434727']").send_keys("WU ZHEN")
 Select(driver.find_element_by_name(
-    "question_434726")).select_by_value("クラス")
+    "question_434726")).select_by_value("院進学C3")
 driver.find_element_by_xpath("//input[@name='question_434728']").click()
 date=str(str(datetime.datetime.now().year)+"/"
          +str(datetime.datetime.now().month)+"/"
